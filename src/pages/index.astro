@@ -1,0 +1,115 @@
+---
+import Layout from '../layouts/Layout.astro';
+import {SITE_TITLE} from '../consts';
+---
+
+<Layout title="Home">
+	<div class="container-fluid d-flex flex-column vh-100">
+		<div class="row mb-3 mt-3">
+			<div class="col-12 col-md-6 mb-3">
+				<div id="topLeft"></div>
+			</div>
+			<div class="col-12 col-md-6 text-end topright">
+				<a href="https://github.com/loissascha" target="_blank"><i class="nf nf-cod-github"></i></a>
+				<a href="mailto:sascha.loishandl@gmail.com"><i class="nf nf-cod-mail"></i></a>
+			</div>
+		</div>
+		<div class="row flex-grow-1 mb-3 d-flex align-items-center">
+			<div class="col-12">
+				<div class="row">
+					<div class="col-12 col-sm-8 col-lg-7 offset-lg-2">
+						<h1>Welcome.</h1>
+						<p>
+							My name is Sascha Loishandl, I'm a software developer based in Austria.
+							I work mostly in the web development space but I have experience in many different areas such as desktop app development, database and software architecture, 
+							game development, managing Linux servers and many more. 
+						</p>
+						<p>
+							I like Game development so check out my itch.io and steam pages.
+						</p>
+						<p>
+							Also check out my open source projects on Github.
+						</p>
+					</div>
+					<div class="col-12 col-sm-4 col-lg-3">
+						<h2>Projects</h2>
+						<ul>
+							<li>
+								<h5>MySql Manager</h5>
+								<small>Management tool for MySql databases either local or over the internet.</small>
+							</li>
+							<li>
+								<h5>CPU Benchmarking Tool</h5>
+								<small>CPU Benchmarking tool. Mainly created with Linux in mind but works on every system.</small>
+							</li>
+							<li>
+								<h5>Dotnet + Astro Template</h5>
+								<small>Template which contains web api written in dotnet 8 and an Astro implementation of the authentication for the api.</small>
+							</li>
+							<li>
+								<h5>NixOS-Configuration</h5>
+								<small>My NixOS configuration files.</small>
+							</li>
+							<li>
+								<h5>Hells Last Stand</h5>
+								<small>My latest game. Created during the GDTV 2024 Game Jam.</small>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row flex-item mb-3">
+			<div class="col-6">
+			</div>
+			<div class="col-6" style="position: relative;">
+				<div id="bottomRight"></div>
+			</div>
+		</div>
+	</div>
+</Layout>
+<style>
+	h2 {
+		background:  orange;
+		padding: 10px;
+		border-top-left-radius: 15px;
+		border-bottom-left-radius: 15px;
+	}
+	
+	ul {
+		list-style: none;
+	}
+	
+	li {
+		margin-top: 15px;
+	}
+	
+	a {
+		color: white;
+		text-decoration: none;
+	}
+	
+	.topright {
+		font-size: 2.5rem;
+	}
+	
+	#topLeft {
+		position: absolute;
+		width: 20vw;
+		height: 10vh;
+		border-top: 15px solid orange;
+		border-left: 15px solid orange;
+		border-top-left-radius: 25px;
+	}
+	
+	#bottomRight {
+		position: absolute;
+		width: 20vw;
+		height: 10vh;
+		border-bottom: 15px solid orange;
+		border-right: 15px solid orange;
+		border-bottom-right-radius: 25px;
+		transform: translateY(-100%);
+		right: 0;
+	}
+</style>
