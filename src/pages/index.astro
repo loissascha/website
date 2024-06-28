@@ -70,8 +70,13 @@ import Layout from '../layouts/Layout.astro';
 	</div>
 </Layout>
 <style>
+	h1 {
+		font-size: 4rem;
+	}
+	
 	h2 {
-		background:  orange;
+		background: #f38ba8;
+		color: #1e1e2e;
 		padding: 10px;
 		border-top-left-radius: 15px;
 		border-bottom-left-radius: 15px;
@@ -98,19 +103,19 @@ import Layout from '../layouts/Layout.astro';
 	
 	#topLeft {
 		position: absolute;
-		width: 20vw;
+		width: 18vw;
 		height: 10vh;
-		border-top: 15px solid orange;
-		border-left: 15px solid orange;
+		border-top: 15px solid #f38ba8;
+		border-left: 15px solid #f38ba8;
 		border-top-left-radius: 25px;
 	}
 	
 	#bottomRight {
 		position: absolute;
-		width: 20vw;
+		width: 18vw;
 		height: 10vh;
-		border-bottom: 15px solid orange;
-		border-right: 15px solid orange;
+		border-bottom: 15px solid #f38ba8;
+		border-right: 15px solid #f38ba8;
 		border-bottom-right-radius: 25px;
 		transform: translateY(-100%);
 		right: calc(var(--bs-gutter-x)*.5);
