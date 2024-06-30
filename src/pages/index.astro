@@ -36,19 +36,40 @@ import Layout from '../layouts/Layout.astro';
 						<h2>Projects</h2>
 						<ul>
 							<li>
-								<h5><a href="https://github.com/loissascha/mysqlManager" target="_blank">MySql Manager</a></h5>
+								<h5>
+									<a href="https://github.com/loissascha/mysqlManager" target="_blank">MySql Manager</a> 
+									<small>
+										<span class="badge bg-blazor">Blazor</span>
+										<span class="badge bg-csharp">C#</span>
+									</small> 
+								</h5>
 								<small>A comprehensive tool for managing MySQL databases locally or remotely over the internet.</small>	
 							</li>
 							<li>
-								<h5><a href="https://github.com/loissascha/linbench" target="_blank">CPU Benchmarking Tool</a></h5>
+								<h5>
+									<a href="https://github.com/loissascha/linbench" target="_blank">CPU Benchmarking Tool</a>
+									<small>
+										<span class="badge bg-blazor">Blazor</span>
+										<span class="badge bg-csharp">C#</span>
+									</small>
+								</h5>
 								<small>A versatile CPU benchmarking tool, optimized for Linux but compatible with all systems.</small>
 							</li>
 							<li>
-								<h5><a href="https://github.com/loissascha/randomWallpaperPicker" target="_blank">Random Wallpaper Changer</a></h5>
+								<h5>
+									<a href="https://github.com/loissascha/randomWallpaperPicker" target="_blank">Random Wallpaper Changer</a>
+									<small><span class="badge bg-rust">Rust</span></small>
+								</h5>
 								<small>CLI tool written in Rust that changes your wallpaper to a random image from a provided path.</small>
 							</li>
 							<li>
-								<h5><a href="https://saschalois.itch.io/hells-last-stand" target="_blank">Hells Last Stand</a></h5>
+								<h5>
+									<a href="https://saschalois.itch.io/hells-last-stand" target="_blank">Hells Last Stand</a>
+									<small>
+										<span class="badge bg-godot">Godot</span>
+										<span class="badge bg-csharp">C#</span>
+									</small>
+								</h5>
 								<small>An intense game developed during the GDTV 2024 Game Jam.</small>
 							</li>
 						</ul>
@@ -115,5 +136,21 @@ import Layout from '../layouts/Layout.astro';
 		border-bottom-right-radius: 25px;
 		transform: translateY(-100%);
 		right: calc(var(--bs-gutter-x)*.5);
+	}
+	
+	.bg-blazor {
+		
+	}
+	
+	.bg-csharp {
+		
+	}
+	
+	.bg-rust {
+		
+	}
+	
+	.bg-godot {
+		
 	}
 </style>
