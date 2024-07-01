@@ -26,7 +26,7 @@ console.log("show back button: ", showBackButton);
 	</head>
 	<body>
 		<div class="container-fluid d-flex flex-column vh-100">
-			<div class="row mb-3 mt-3">
+			<div class="row mb-3 mt-3" style="min-height: 10vh">
 				<div class="col-12 col-md-6 mb-3">
 					<div id="topLeft"></div>
 					{
@@ -54,14 +54,16 @@ console.log("show back button: ", showBackButton);
 					</div>
 				</div>
 			</div>
-			<div class="row flex-item mb-3">
+			<div class="row flex-item mb-3" style="min-height: 10vh">
 				<div class="col-6 toplinks">
 					{
 						showBackButton &&
 						(
+							<div>
 							<a href="https://github.com/loissascha" target="_blank"><i class="nf nf-cod-github"></i></a>
 							<a href="https://www.linkedin.com/in/sascha-loishandl-68b63021b/" target="_blank"><i class="nf nf-fa-linkedin_in"></i></a>
 							<a href="mailto:sascha.loishandl@gmail.com"><i class="nf nf-cod-mail"></i></a>
+								</div>
 						)
 					}
 				</div>
@@ -96,6 +98,10 @@ console.log("show back button: ", showBackButton);
 	
 	.toplinks {
 		font-size: 2.2rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		height: 100%; /* Ensure this .toplinks element takes full height of parent */
 	}
 
 	#topLeft {
@@ -114,7 +120,7 @@ console.log("show back button: ", showBackButton);
 		border-bottom: 15px solid #f38ba8;
 		border-right: 15px solid #f38ba8;
 		border-bottom-right-radius: 25px;
-		transform: translateY(-100%);
 		right: calc(var(--bs-gutter-x)*.5);
+		bottom: calc(var(--bs-gutter-x)*.5);
 	}
 </style>
