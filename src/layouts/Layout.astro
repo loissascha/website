@@ -36,10 +36,15 @@ console.log("show back button: ", showBackButton);
 						)
 					}
 				</div>
-				<div class="col-12 col-md-6 text-end topright">
-					<a href="https://github.com/loissascha" target="_blank"><i class="nf nf-cod-github"></i></a>
-					<a href="https://www.linkedin.com/in/sascha-loishandl-68b63021b/" target="_blank"><i class="nf nf-fa-linkedin_in"></i></a>
-					<a href="mailto:sascha.loishandl@gmail.com"><i class="nf nf-cod-mail"></i></a>
+				<div class="col-12 col-md-6 text-end topright toplinks">
+					{
+						!showBackButton &&
+						(
+							<a href="https://github.com/loissascha" target="_blank"><i class="nf nf-cod-github"></i></a>
+							<a href="https://www.linkedin.com/in/sascha-loishandl-68b63021b/" target="_blank"><i class="nf nf-fa-linkedin_in"></i></a>
+							<a href="mailto:sascha.loishandl@gmail.com"><i class="nf nf-cod-mail"></i></a>
+						)
+					}
 				</div>
 			</div>
 			<div class="row flex-grow-1 mb-3 d-flex align-items-center">
@@ -50,7 +55,15 @@ console.log("show back button: ", showBackButton);
 				</div>
 			</div>
 			<div class="row flex-item mb-3">
-				<div class="col-6">
+				<div class="col-6 toplinks">
+					{
+						showBackButton &&
+						(
+							<a href="https://github.com/loissascha" target="_blank"><i class="nf nf-cod-github"></i></a>
+							<a href="https://www.linkedin.com/in/sascha-loishandl-68b63021b/" target="_blank"><i class="nf nf-fa-linkedin_in"></i></a>
+							<a href="mailto:sascha.loishandl@gmail.com"><i class="nf nf-cod-mail"></i></a>
+						)
+					}
 				</div>
 				<div class="col-6" style="position: relative;">
 					<div id="bottomRight"></div>
@@ -78,8 +91,11 @@ console.log("show back button: ", showBackButton);
 	}
 	
 	.topright {
-		font-size: 2.2rem;
 		padding-right: 25px;
+	}
+	
+	.toplinks {
+		font-size: 2.2rem;
 	}
 
 	#topLeft {
