@@ -8,7 +8,6 @@ interface Props {
 }
 
 const { title, showBackButton } = Astro.props;
-console.log("show back button: ", showBackButton);
 ---
 
 <!doctype html>
@@ -40,9 +39,11 @@ console.log("show back button: ", showBackButton);
 					{
 						!showBackButton &&
 						(
-							<a href="https://github.com/loissascha" target="_blank"><i class="nf nf-cod-github"></i></a>
-							<a href="https://www.linkedin.com/in/sascha-loishandl-68b63021b/" target="_blank"><i class="nf nf-fa-linkedin_in"></i></a>
-							<a href="mailto:sascha.loishandl@gmail.com"><i class="nf nf-cod-mail"></i></a>
+							<div transition:name="shortlinks">
+								<a href="https://github.com/loissascha" target="_blank"><i class="nf nf-cod-github"></i></a>
+								<a href="https://www.linkedin.com/in/sascha-loishandl-68b63021b/" target="_blank"><i class="nf nf-fa-linkedin_in"></i></a>
+								<a href="mailto:sascha.loishandl@gmail.com"><i class="nf nf-cod-mail"></i></a>
+							</div>
 						)
 					}
 				</div>
@@ -59,7 +60,7 @@ console.log("show back button: ", showBackButton);
 					{
 						showBackButton &&
 						(
-							<div>
+							<div transition:name="shortlinks">
 								<a href="https://github.com/loissascha" target="_blank"><i class="nf nf-cod-github"></i></a>
 								<a href="https://www.linkedin.com/in/sascha-loishandl-68b63021b/" target="_blank"><i class="nf nf-fa-linkedin_in"></i></a>
 								<a href="mailto:sascha.loishandl@gmail.com"><i class="nf nf-cod-mail"></i></a>
