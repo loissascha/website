@@ -1,6 +1,6 @@
 ---
 layout: '../../layouts/ProjectLayout.astro'
-title: 'My markdown page'
+title: 'CPU Benchmark Tool'
 ---
 
 # Benchmark Tool

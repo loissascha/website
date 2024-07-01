@@ -1,6 +1,6 @@
 ---
 layout: '../../layouts/ProjectLayout.astro'
-title: 'My markdown page'
+title: 'Hells Last Stand'
 ---
 
 # Hells Last Stand

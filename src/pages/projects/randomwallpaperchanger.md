@@ -1,6 +1,6 @@
 ---
 layout: '../../layouts/ProjectLayout.astro'
-title: 'My markdown page'
+title: 'Random Wallpaper Changer'
 ---
 
 # Random Wallpaper Changer
