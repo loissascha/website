@@ -3,20 +3,6 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="">
-	<div class="container-fluid d-flex flex-column vh-100">
-		<div class="row mb-3 mt-3">
-			<div class="col-12 col-md-6 mb-3">
-				<div id="topLeft"></div>
-			</div>
-			<div class="col-12 col-md-6 text-end topright">
-				<a href="https://github.com/loissascha" target="_blank"><i class="nf nf-cod-github"></i></a>
-				<a href="https://www.linkedin.com/in/sascha-loishandl-68b63021b/" target="_blank"><i class="nf nf-fa-linkedin_in"></i></a>
-				<a href="mailto:sascha.loishandl@gmail.com"><i class="nf nf-cod-mail"></i></a>
-			</div>
-		</div>
-		<div class="row flex-grow-1 mb-3 d-flex align-items-center">
-			<div class="col-12">
-				<div class="row">
 					<div class="col-12 col-sm-10 offset-sm-1 col-lg-7 offset-lg-0 col-xl-7 offset-xl-1 col-xxl-6 offset-xxl-2 mb-4">
 						<h1>Welcome.</h1>
 						<p>
@@ -38,7 +24,7 @@ import Layout from '../layouts/Layout.astro';
 						<ul>
 							<li>
 								<h5>
-									<a href="https://github.com/loissascha/mysqlManager" target="_blank">MySql Manager</a> 
+									<a href="/projects/mysqlmanager" target="_blank">MySql Manager</a> 
 									<small>
 										<span class="badge bg-blazor">Blazor</span>
 										<span class="badge bg-csharp">C#</span>
@@ -73,19 +59,13 @@ import Layout from '../layouts/Layout.astro';
 								</h5>
 								<small>An intense game developed during the GDTV 2024 Game Jam.</small>
 							</li>
+							<li>
+								<h5>
+									<a href="/projects/test">Test</a>
+								</h5>
+							</li>
 						</ul>
 					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row flex-item mb-3">
-			<div class="col-6">
-			</div>
-			<div class="col-6" style="position: relative;">
-				<div id="bottomRight"></div>
-			</div>
-		</div>
-	</div>
 </Layout>
 <style>
 	h1 {
@@ -114,30 +94,6 @@ import Layout from '../layouts/Layout.astro';
 		font-weight: bold; 
 	}
 	
-	.topright {
-		font-size: 2.2rem;
-		padding-right: 25px;
-	}
-	
-	#topLeft {
-		position: absolute;
-		width: 18vw;
-		height: 10vh;
-		border-top: 15px solid #f38ba8;
-		border-left: 15px solid #f38ba8;
-		border-top-left-radius: 25px;
-	}
-	
-	#bottomRight {
-		position: absolute;
-		width: 18vw;
-		height: 10vh;
-		border-bottom: 15px solid #f38ba8;
-		border-right: 15px solid #f38ba8;
-		border-bottom-right-radius: 25px;
-		transform: translateY(-100%);
-		right: calc(var(--bs-gutter-x)*.5);
-	}
 	
 	.bg-blazor {
 		background: #cba6f7;
