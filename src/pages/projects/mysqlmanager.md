@@ -1,9 +1,9 @@
 ---
 layout: '../../layouts/ProjectLayout.astro'
 title: 'MySql Manager'
+transitionName: 'mysqlmanager'
 ---
 
-# MySql Manager
 
 I have created this project because I was missing a really great and easy to use mysql management tool in my application suite.
 

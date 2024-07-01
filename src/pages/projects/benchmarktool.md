@@ -1,8 +1,7 @@
 ---
-layout: '../../layouts/ProjectLayout.astro'
-title: 'CPU Benchmark Tool'
+layout: ../../layouts/ProjectLayout.astro
+title: 'CPU Benchmarking Tool'
+transitionName: 'benchmarktool'
 ---
-
-# Benchmark Tool
 
 I have created this project because I was missing a really great and easy to use mysql management tool in my application suite.
