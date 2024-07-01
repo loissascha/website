@@ -1,5 +1,6 @@
 ---
 import GlobalStyles from "../components/css/GlobalStyles.astro";
+import { ViewTransitions } from "astro:transitions";
 import {SITE_TITLE} from "../consts";
 interface Props {
 	title: string;
@@ -19,6 +20,7 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title} {SITE_TITLE}</title>
 		<GlobalStyles />
+		<ViewTransitions />
 	</head>
 	<body>
 		<div class="container-fluid d-flex flex-column vh-100">
