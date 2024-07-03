@@ -27,7 +27,7 @@ const { title, showBackButton } = Astro.props;
 		<div class="container-fluid d-flex flex-column vh-100">
 			<div class="row mb-3 mt-3" style="min-height: 10vh">
 				<div class="col-12 col-md-6 mb-3">
-					<div id="topLeft"></div>
+					<div id="topLeft" transition:animate="none"></div>
 					{
 						showBackButton && 
 						(
@@ -39,7 +39,7 @@ const { title, showBackButton } = Astro.props;
 					{
 						!showBackButton &&
 						(
-							<div transition:name="shortlinksa">
+							<div>
 								<a href="https://github.com/loissascha" target="_blank"><i class="nf nf-cod-github"></i></a>
 								<a href="https://www.linkedin.com/in/sascha-loishandl-68b63021b/" target="_blank"><i class="nf nf-fa-linkedin_in"></i></a>
 								<a href="mailto:sascha.loishandl@gmail.com"><i class="nf nf-cod-mail"></i></a>
@@ -60,7 +60,7 @@ const { title, showBackButton } = Astro.props;
 					{
 						showBackButton &&
 						(
-							<div transition:name="shortlinks">
+							<div>
 								<a href="https://github.com/loissascha" target="_blank"><i class="nf nf-cod-github"></i></a>
 								<a href="https://www.linkedin.com/in/sascha-loishandl-68b63021b/" target="_blank"><i class="nf nf-fa-linkedin_in"></i></a>
 								<a href="mailto:sascha.loishandl@gmail.com"><i class="nf nf-cod-mail"></i></a>
@@ -69,7 +69,7 @@ const { title, showBackButton } = Astro.props;
 					}
 				</div>
 				<div class="col-6" style="position: relative;">
-					<div id="bottomRight"></div>
+					<div id="bottomRight" transition:animate="none"></div>
 				</div>
 			</div>
 		</div>
