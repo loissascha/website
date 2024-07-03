@@ -4,8 +4,10 @@ const { frontmatter } = Astro.props;
 ---
 
 <Layout title={frontmatter.title} showBackButton={true}>
-    <div class="col-12 col-sm-10 offset-sm-1 col-lg-7 offset-lg-0 col-xl-7 offset-xl-1 col-xxl-6 offset-xxl-2 mb-4 mt-4" >
-        <h1>{frontmatter.title}</h1>
-        <slot/>
+    <div class="col-12">
+        <div class="container">
+            <h1>{frontmatter.title}</h1>
+            <slot/>
+        </div>
     </div>
 </Layout>
