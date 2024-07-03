@@ -1,7 +1,6 @@
 ---
 layout: '../../layouts/ProjectLayout.astro'
 title: 'MySql Manager'
-transitionName: 'mysqlmanager'
 ---
 
 
