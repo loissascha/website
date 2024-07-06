@@ -1,6 +1,7 @@
 ---
 layout: '../../layouts/ProjectLayout.astro'
 title: 'MySql Manager'
+link: 'https://github.com/loissascha'
 ---
 
 

@@ -1,12 +1,14 @@
 ---
 import Layout from "./Layout.astro";
 const { frontmatter } = Astro.props;
+console.log(frontmatter);
 ---
 
 <Layout title={frontmatter.title} showBackButton={true}>
     <div class="col-12">
         <div class="container">
             <h1>{frontmatter.title}</h1>
+            <a href={frontmatter.link} target="_blank">Link</a>
             <slot/>
         </div>
     </div>
