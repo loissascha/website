@@ -1,7 +1,18 @@
 ---
 layout: '../../layouts/ProjectLayout.astro'
 title: 'Random Wallpaper Changer'
-link: 'https://github.com/loissascha'
+link: 'https://github.com/loissascha/randomWallpaperPicker'
 ---
 
-I have created this project because I was missing a really great and easy to use mysql management tool in my application suite.
+Uses swww to set your wallpaper. Changes wallpaper every 5 minutes.
+
+### How to Use
+```
+./randomWallpaper --path /path/to/your/image/folder
+```
+you can add an optional parameter --duration to change the default time of 300 seconds between wallpaper changes.
+
+### How to Build
+```
+cargo build --release
+```
