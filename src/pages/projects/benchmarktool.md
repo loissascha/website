@@ -11,3 +11,5 @@ Currently supports single- and multi-core CPU benchmarks.
 GPU benchmarks are wip.
 
 GUI is highly wip, I'm using Blazor with an electron wrapper to display the application in its own application window. It's basically using the default Blazor theme right now.
+
+Currently not actively developed.
