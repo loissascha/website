@@ -16,3 +16,4 @@ you can add an optional parameter --duration to change the default time of 300 s
 ```
 cargo build --release
 ```
+or download from the releases page on github
