@@ -13,6 +13,3 @@ This project is still very early in development and therefore not recommended to
 ![Alt text](/pictures/dashboard.png?raw=true "Dashboard")
 
 ![Alt text](/pictures/tableOverview.png?raw=true "Table Overview")
-
-## License
-See the [LICENSE](LICENSE.md) file for more information.
